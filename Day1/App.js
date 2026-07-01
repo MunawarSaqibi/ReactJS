@@ -7,3 +7,4 @@ function App(){
 
 ReactDOM.createroot(document.getElementById("root")).render(<App/>) 
   
+console.log("Hello World")
