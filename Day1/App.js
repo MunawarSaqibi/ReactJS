@@ -1,9 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from "react"
+import ReactDOM from "react-dom/client"
 
-
-
-function Heading(){
-    return <h1>Hello React</h1>
+function App(){
+    return <h1>Hello World</h1>
 }
-ReactDOM.createRoot(document.getElementById("root")).render(<Heading/>);
+
+ReactDOM.createroot(document.getElementById("root")).render(<App/>) 
+  
