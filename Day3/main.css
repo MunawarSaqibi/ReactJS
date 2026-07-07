@@ -1,18 +1,23 @@
+*{
+   padding: 0px ;
+}
+
 .header-container{
-    width: 100%;
-    background-color: rgb(59, 59, 59);
+   
+    height: 100px;
+    background-color: #28946fc0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     border-radius: 30px;
-    box-shadow: 0px 1px 3px #181314;
+    box-shadow: 0px 1px 3px #e9811f;
     position: fixed;
     top:0;
     left: 0;
     right: 0;
 }
 .title-div{
+    width: 30vW;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,24 +27,26 @@
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-    margin-right: 0;
 }
 .title-name{
     font-size: 30px;
     font-weight: 700;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #e1ddda;
+    color: #FF9760;
 }
 .go-span{
     color: #fe455a;
 }
 
 .searchBar{
-    width: 35rem;
-    height: 2.5rem;
+    width: 40vW;
+    height: 3vh;
     border-radius: 50px;
     border: none;
-    margin: auto;
+    padding: 5px
+}
+.search-bar>input{
+    width: 90%;
 }
 
 .search-bar > input::placeholder {
@@ -56,17 +63,16 @@
     padding: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
-    color: #FFF8F2;
+    color: #FFD150;
 }
 .nav-bar> ul> li:hover{
     transform: scale(0.9);
     transition: transform 0.3s ease;
-    border-bottom: 1px solid orangered;
 }
 
 /* Body Style */
 .items-conatiner{
-    background-color: #e1ddda;
+    background-color: #F8FAFC;
     width: 100%;
     margin-top: 30px;
     display:flex;
@@ -78,25 +84,31 @@
 
 .item-card{
     width: 250px;
-    background-color: #fdd8a0;
-    box-shadow: 0px 1px 2px #FBBF24;
+    background-color: #ffd501;
+    box-shadow: 0px 1px 2px #458B73;
     margin: 30px;
     overflow: hidden;
     border-radius: 12px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #111827;
+    color: #460468;
 }
 .item-card:hover{
-   transform: scale(1.05);
-   transition: transform 0.3s ease;
+  box-shadow: 0px 2px 3px white;
 }
-
+.img-div{
+     object-fit: cover;
+}
 .item-img{
     width: 100%;
-    height: 30%;
+    height: 25vh;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+   
 }
 .item-res{
     margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
 }
 .item-loc{
      margin: 10px;
@@ -110,7 +122,7 @@
 .footer-div{
     width: 100%;
     height: 200px;
-    background-color: #E63946;
+    background-color: #FF9760;
     color: #F8FAFC;
     text-align: center;
     position: relative;
