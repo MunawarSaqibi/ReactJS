@@ -5,16 +5,18 @@
 .header-container{
    
     height: 100px;
-    background-color: #28946fc0;
+    background-color: rgb(247, 244, 244);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 30px;
-    box-shadow: 0px 1px 3px #e9811f;
-    position: fixed;
+    box-shadow: 0px 1px 3px;
+    position: sticky;
+    z-index: 99;
     top:0;
     left: 0;
     right: 0;
+    overflow: hidden;
 }
 .title-div{
     width: 30vW;
@@ -32,10 +34,10 @@
     font-size: 30px;
     font-weight: 700;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #FF9760;
+    color: #fe455a;
 }
 .go-span{
-    color: #fe455a;
+    color: Orange;
 }
 
 .searchBar{
@@ -71,21 +73,21 @@
 }
 
 /* Body Style */
-.items-conatiner{
-    background-color: #F8FAFC;
+.items-container{
+    background-color: #f6f5f5;
     width: 100%;
     margin-top: 30px;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 130px;
+    margin-top: 30px;
 
 }
 
 .item-card{
     width: 250px;
-    background-color: #fafdf5;
-    box-shadow: 0px 1px 2px #458B73;
+    background-color: #fff3e0;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08);
     margin: 30px;
     overflow: hidden;
     border-radius: 12px;
@@ -125,28 +127,100 @@
 
 /* Footer Style */
 
-.footer-div{
+.footer-container{
     width: 100%;
-    height: 200px;
-    background-color: #080101ee;
-    color: #F8FAFC;
-    position: relative;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    
+ background-color: #1e1e1e;
+ margin: 0px;
 }
-.title-footer{
-   
+.footer-top{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.logo-title-footer{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.footer-name{
-    font-size: 25px;
-    font-weight: 700;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #FF9760;
+.footer-logo{
+     height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
 }
+.title-caption-div{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Shimmer Effect */
+
+.shimmer-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+.shimmer-container{
+    width: 250px;
+    min-height: 300px;
+    padding: 18px;
+    margin: 30px;
+    background-color: #fdfcfc;
+    border-radius: 20px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.85) 50%, transparent 100%);
+    animation: shimmer 1.2s infinite;
+}
+
+.load-img,
+.load-name,
+.load-cuisine,
+.load-loc,
+.load-rating{
+    background-color: #f7f3f3;
+    border-radius: 12px;
+    margin: 14px 0;
+}
+
+.load-img{
+    width: 100%;
+    height: 160px;
+}
+
+.load-name{
+    width: 70%;
+    height: 20px;
+}
+
+.load-cuisine,
+.load-loc,
+.load-rating{
+    width: 90%;
+    height: 14px;
+}
+
+.load-rating{
+    width: 60%;
+}
+
+@keyframes shimmer{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(150%);
+    }
+}
+

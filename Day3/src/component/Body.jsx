@@ -1,14 +1,19 @@
-import Restaurantcard from "./Restaurantcard"
-import { restaurantArr } from "../utils/mockData"
+import Shimmer from "./Shimmer"
 
-const Body=()=>{
-    return(
-        <div className="items-conatiner">
-            {restaurantArr.map((props)=>{
-                return <Restaurantcard resData={props} key={props.id} />
-            })}
+const Body = () => {
+    return (
+        <div className="items-container">
+            <Shimmer />
         </div>
     )
+    // return(
+    //     <div className="items-container">
+            
+    //         {/* {restaurantArr.map((props)=>{
+    //             return <Restaurantcard resData={props} key={props.id} />
+    //         })} */}
+    //     </div>
+    // )
 
 }
 
