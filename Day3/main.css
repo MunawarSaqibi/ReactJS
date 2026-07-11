@@ -85,7 +85,7 @@
 }
 
 .item-card{
-    width: 250px;
+    width: 260px;
     background-color: #fff3e0;
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08);
     margin: 30px;
@@ -102,7 +102,7 @@
 }
 .item-img{
     width: 100%;
-    height: 25vh;
+    height: 50%;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
    
@@ -222,5 +222,137 @@
     100%{
         transform: translateX(150%);
     }
+}
+
+
+.footer-top{
+    max-width:1400px;
+    margin:auto;
+    padding:50px 45px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr 1fr 2fr;
+    gap:45px;
+}
+
+/* ===================== Logo ===================== */
+
+.logo-title-footer{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:18px;
+}
+
+.logo-title-footer .logo{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+}
+
+.title-footer{
+    font-size:28px;
+    font-weight:700;
+    color:#222;
+}
+
+.caption{
+    color:#6b7280;
+    line-height:1.8;
+    font-size:15px;
+    max-width:270px;
+}
+
+/* ===================== Lists ===================== */
+
+.detail-list ul{
+    list-style:none;
+}
+
+.head-list{
+    font-size:17px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:18px;
+}
+
+.detail-list li{
+    margin-bottom:12px;
+    color:#6b7280;
+    cursor:pointer;
+    transition:.3s;
+    font-size:15px;
+}
+
+.detail-list li:hover{
+    color:#2563eb;
+}
+
+/* ===================== Newsletter ===================== */
+
+.update-caption{
+    color:#6b7280;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.footer-top input{
+    width:150px;
+    height:46px;
+    padding:0 18px;
+    border:1px solid #d1d5db;
+    border-radius:10px 0 0 10px;
+    outline:none;
+    font-size:15px;
+}
+
+.footer-top input:focus{
+    border-color:#2563eb;
+}
+
+.send-btn{
+    height:46px;
+    padding:0 22px;
+    border:none;
+    border-radius:0 10px 10px 0;
+    background:#2563eb;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.send-btn:hover{
+    background:#1d4ed8;
+}
+
+/* ===================== Social Icons ===================== */
+
+.contact-icon{
+    width:42px;
+    height:42px;
+    margin-top:25px;
+    margin-right:12px;
+    padding:9px;
+    border:1px solid #e5e7eb;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.3s;
+    background:#fafafa;
+}
+
+.contact-icon:hover{
+    transform:translateY(-3px);
+    background:#2563eb;
+    border-color:#2563eb;
+}
+
+/* ===================== Copyright ===================== */
+
+.footer-copy{
+    border-top:1px solid #e5e7eb;
+    text-align:center;
+    padding:22px;
+    color:#6b7280;
+    font-size:15px;
 }
 

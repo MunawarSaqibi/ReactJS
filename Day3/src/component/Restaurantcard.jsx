@@ -1,24 +1,26 @@
+import { ImageBasicUrl } from "../utils/constants";
+
 const Restaurantcard=({resData})=>{
     const{
         id,
-        resName,
-        cuisine,
+        name,
+        cuisines,
         avgRating,
-        delieveryTime,
+        sla,
         costForTwo,
-        imgId,
-        location,
+        cloudinaryImageId,
+        areaName,
 
     }= resData;
 
      return (
         <div className="item-card">
                  <div className="img-div">
-                     <img className="item-img" src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${imgId}`}/>
+                     <img className="item-img" src={`${ImageBasicUrl}${cloudinaryImageId}`}/>
                  </div>
-                 <div className="item-res">{resName}</div>
-                 <div className="item-cuisine">{cuisine}</div>
-                 <div className="item-loc"> 📍{location} | ⏱️Delivery within {delieveryTime}min </div>
+                 <div className="item-res">{name}</div>
+                 <div className="item-cuisine">{cuisines.join(", ")}</div>
+                 <div className="item-loc"> 📍{areaName} | ⏱️Delivery within {sla.delieveryTime}min </div>
                  <div className="item-rp"> ⭐{avgRating} |  {costForTwo}</div>
              </div>
      )
