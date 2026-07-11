@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+}
+.header-container{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.title-div{
+    display: flex;
+    align-items: center;
+}
+.img-logo{
+    width: 10rem;
+    border-radius: 50%;
+}
+.title-name{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fe455a;
+}
+.go-span{
+    color: Orange;
+}
+.searchBar{
+    width: 40vW;
+    height: 3vh;
+    border-radius: 50px;
+    padding: 5px
+}
+.search-bar>input{
+    width: 90%;
+}
+
+.search-bar > input::placeholder {
+  color: white;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+.nav-bar ul li{
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.nav-bar> ul> li:hover{
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+.cartIcon{
+    width: 3rem;
+}
+.hero-container {
+    background-image: url("https://ik.imagekit.io/marSaQ/food-delivery-banner-design-flat-design-online-order-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px; /* Adjust as needed */
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    
+}
+.main-caption{
+    font-size: 28px;
+    font-weight:800;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin-left: 30px;
+    margin-top: 20px;
+    text-shadow: 1px 2px 3px white;
+    
+}
+.sub-caption{
+    font-size: 20px;
+    font-weight:700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 30px;
+    text-shadow: 0px 1px 2px;
+    
+}
+.order-btn{
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 7px;
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 2px 2px;
+    margin: 10px;
+    margin-left: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.category-name{
+    font-size: 22px;
+    font-family:fantasy;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.top-categories{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.top-categories img{
+    width: 150px;
+    margin: 10px;
+}

@@ -5,3 +5,11 @@ export const notifyIcon="https://th.bing.com/th/id/OIP.2vE1yVfGk4-nKYyrkYndkQHaH
  export const facebookIcon="https://th.bing.com/th/id/OIP.z-yfUyI8tnd_8nIKhw6VogHaHa?w=180&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
  export const ImageBasicUrl="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
  export const swiggyURL ="https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.374638644228302&lng=78.4300148114562&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+ export const cartIcon="https://cdn-icons-png.flaticon.com/512/8906/8906369.png"
+
+ export const BiryaniPNG="https://tse2.mm.bing.net/th/id/OIP.zAslLWVgQnn-WXjTnQFeyAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+ export const PizzaPNG="https://tse4.mm.bing.net/th/id/OIP.hixP7q3S8fvWsLhw0nu61QHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+ export const BurgerPNG="https://tse3.mm.bing.net/th/id/OIP.jSIEY-gKYfNbYoFYOrHYNgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+ export const ChineesePNG="https://tse4.mm.bing.net/th/id/OIP.TtZJwhvDaGoHfmBxPVDyDQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+ export const DessertsPNG="https://tse3.mm.bing.net/th/id/OIP.gVoTAJxuIh8A9Z8BpEltpQHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+ export const MandiPNG="https://seemattyrestaurant.com/wp-content/uploads/2024/03/royal_mandi_cuisine.png"

@@ -1,4 +1,5 @@
 import { Applogo } from "../utils/constants"
+import { cartIcon } from "../utils/constants"
 
 const Header=()=>{
     return(
@@ -13,9 +14,10 @@ const Header=()=>{
         <div className="nav-bar">
             <ul>
                 <li>Home</li>
-                 <li>About</li>
-                  <li>Contact-us</li>
-                   <li>Cart</li>
+                 <li>Restaurants</li>
+                  <li>Offers</li>
+                   <li>Help</li>
+                   <li><img className="cartIcon" src={cartIcon} alt="add to cart" /></li>
             </ul>
         </div>
         
