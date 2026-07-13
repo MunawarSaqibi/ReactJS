@@ -1,3 +1,4 @@
+
 *{
     padding: 0px;
 }
@@ -15,17 +16,8 @@
     align-items: center;
 }
 .img-logo{
-    width: 10rem;
-    border-radius: 50%;
-}
-.title-name{
-    font-size: 30px;
-    font-weight: 700;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #fe455a;
-}
-.go-span{
-    color: Orange;
+    width: 12rem;
+    margin-left: 20px;
 }
 .searchBar{
     width: 40vW;
@@ -60,7 +52,7 @@
     width: 3rem;
 }
 .hero-container {
-    background-image: url("https://ik.imagekit.io/marSaQ/food-delivery-banner-design-flat-design-online-order-vector.jpg");
+    background-image: url("https://ik.imagekit.io/marSaQ/YummyGoBannerBackground.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,11 +61,11 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content:right;
+    justify-content:center;
     
 }
 .main-caption{
-    font-size: 28px;
+    font-size: 50px;
     font-weight:800;
     font-family:Georgia, 'Times New Roman', Times, serif;
     padding: 5px;
@@ -83,6 +75,7 @@
     
 }
 .sub-caption{
+    color: orange;
     font-size: 20px;
     font-weight:700;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

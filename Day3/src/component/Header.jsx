@@ -6,7 +6,6 @@ const Header=()=>{
         <div className="header-container">
         <div className="title-div">
             <img className="img-logo" src={Applogo} alt="Food App logo"/>
-            <div className="title-name">Yummy<span  className="go-span">Go</span></div>
         </div>
         <div>
             <input placeholder="Search Food,Restaurant" className="searchBar"/>

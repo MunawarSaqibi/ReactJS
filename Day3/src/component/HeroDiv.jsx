@@ -9,6 +9,7 @@ const HeroDiv=()=>{
             <div className="sub-caption">Your favourite meals,</div>
             <div className="sub-caption">at your doorstep</div>
             <button className="order-btn">Order Now</button>
+            
         </div>
         <div>
             <div className="category-name">Top categories</div>
