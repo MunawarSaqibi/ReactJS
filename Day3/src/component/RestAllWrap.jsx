@@ -1,11 +1,13 @@
-import Shimmer from "./Shimmer"
-import { useState, useEffect } from "react"
-import Restaurantcard from "./Restaurantcard"
+import { useEffect, useState } from "react"
+import RestAllCard from "./RestAllCard"
 import { swiggyURL } from "../utils/constants"
-import HeroDiv from "./HeroDiv"
+import Shimmer from "./Shimmer"
+import Restaurantcard from "./Restaurantcard"
+import MenuRestaurant from "./MenuRestaurant"
+import { Link } from "react-router-dom"
+import Body from "./Body"
+export const RestAllWrap = () => {
 
-
-const Body = () => {
     const [hotelList, setHotelList]=useState(null)
 
     useEffect(()=>{
@@ -33,11 +35,14 @@ const Body = () => {
     return (
         <div>
 
-            <div className="category-name">Featured Restaurant</div>
+            <div className="category-name">Features Restaurant</div>
             <div className="items-container">
             {hotelList.map((resObj)=>{
                 return(
-                    <Restaurantcard resData={resObj?.info} key={resObj?.info?.id} />
+                    <Link to={`/restaurantsMenu/${resObj?.info?.id}`} key={resObj?.info?.id}>
+                    <Restaurantcard resData={resObj?.info}  />
+                    </Link>
+                    
                 )
             })}
         </div>
@@ -48,4 +53,4 @@ const Body = () => {
 
 }
 
-export default Body
+export default RestAllWrap

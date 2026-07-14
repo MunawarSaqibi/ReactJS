@@ -14,12 +14,12 @@ const HeroDiv=()=>{
         <div>
             <div className="category-name">Top categories</div>
             <div className="top-categories">
-            <img  src={BiryaniPNG} alt="" />
-             <img src={PizzaPNG} alt="" />
-              <img src={BurgerPNG} alt="" />
-               <img src={ChineesePNG} alt="" />
-                <img src={DessertsPNG} alt="" />
-                 <img src={MandiPNG} alt="" />
+            <img className="categoryImg" src={BiryaniPNG} alt="" />
+             <img className="categoryImg" src={PizzaPNG} alt="" />
+              <img className="categoryImg" src={BurgerPNG} alt="" />
+               <img className="categoryImg" src={ChineesePNG} alt="" />
+                <img className="categoryImg" src={DessertsPNG} alt="" />
+                 <img className="categoryImg" src={MandiPNG} alt="" />
         </div>
         </div>
         
