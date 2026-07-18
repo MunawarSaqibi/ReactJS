@@ -1,8 +1,12 @@
 import { Applogo } from "../utils/constants"
 import { cartIcon } from "../utils/constants"
 import { Link } from "react-router-dom"
+import { useState,useEffect } from "react"
+import useOnlineStatus from "../utils/useOnlineStatus"
 
 const Header=()=>{
+
+    const isOnline=useOnlineStatus();
     return(
         <div className="header-container">
             <img className="img-logo" src={Applogo} alt="Food App logo"/>
@@ -10,7 +14,11 @@ const Header=()=>{
             <input className="searchBar" placeholder="Search Food , Restaurants and More" />
             </div>
         <div className="nav-bar">
+        
             <ul>
+                
+                    {isOnline ?  <li> 🛜</li> : <li> 📴 </li>}
+    
                 <li>
                     <Link className="nav-option" to={"/"}>Home</Link>
                     </li>
