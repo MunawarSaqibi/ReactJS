@@ -3,13 +3,14 @@ import { useState } from "react";
 import { DownIcon } from "../utils/constants";
 import MenuItem from "./MenuItem";
 
-const RestaurantCategory=({categoryInfo})=>{
+const RestaurantCategory=({categoryInfo, order, setIndex})=>{
     
         const {title,itemCards}=categoryInfo;
-        const [isOpen,setIsOpen]=useState(false);
+        
+        let isOpen = order;
 
         function toggleBody(){
-            setIsOpen(!isOpen)
+            setIndex()
         }
     return (
         <div className="category-accordian">
