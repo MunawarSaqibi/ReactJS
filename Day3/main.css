@@ -493,11 +493,16 @@ body{background:var(--bg)}
     
 }
 .category-header{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 3px rgb(231, 197, 135);
+    border-radius: 10px;
     font-size: 24px;
     font-weight: 800;
     margin-top: 30px;
     margin-left: 30px;
-    padding: 10px;
+    padding: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .menu-item-details{
