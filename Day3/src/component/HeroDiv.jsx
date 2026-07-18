@@ -1,4 +1,7 @@
 import { BiryaniPNG, BurgerPNG, ChineesePNG, DessertsPNG, MandiPNG, PizzaPNG } from "../utils/constants"
+import DineOut from "./DineOut"
+import Grocery from "./Grocery"
+import { Link } from "react-router-dom"
 
 const HeroDiv=()=>{
     return(
@@ -12,7 +15,12 @@ const HeroDiv=()=>{
             
         </div>
         <div>
+            <div><Link to={"/groceryGo"}>Grocery</Link></div>
+            <div><Link to={"/GoDineOut"}>DineOut</Link></div>
+        </div>
+        <div>
             <div className="category-name">Top categories</div>
+            
             <div className="top-categories">
             <img className="categoryImg" src={BiryaniPNG} alt="" />
              <img className="categoryImg" src={PizzaPNG} alt="" />

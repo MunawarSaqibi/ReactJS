@@ -573,3 +573,13 @@ body{background:var(--bg)}
         left: 150%;
     }
 }
+
+.web-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.more-web{
+    width: 100px;
+    background-color: rgb(130, 127, 127);
+}

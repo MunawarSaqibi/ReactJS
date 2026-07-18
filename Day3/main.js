@@ -10,6 +10,13 @@ import Cart from "./src/component/Cart"
 import Error from "./src/component/Eroor"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import MenuRestaurant from "./src/component/MenuRestaurant"
+import Grocery from "./src/component/Grocery"
+import DineOut from "./src/component/DineOut"
+import { lazy, Suspense } from "react"
+
+const Grocery=lazy(()=> import("./src/component/Grocery"))
+const DineOut=lazy(()=> import("./src/component/DineOut"))
+
 
 const routerApp=createBrowserRouter([
     {
@@ -32,10 +39,19 @@ const routerApp=createBrowserRouter([
     {
         path:"/cart",
         element:<Cart/>
-    }
+    },
+    
         ],
         errorElement:<Error/>
     },
+    {
+        path:"/groceryGo",
+        element:<Grocery/>
+    },
+    {
+        path:"/GoDineOut",
+        element:<DineOut/>
+    }
     
 ])
 const root=ReactDOM.createRoot(document.getElementById("root"))
