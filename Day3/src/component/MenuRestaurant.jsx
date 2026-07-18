@@ -1,7 +1,11 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
-import { MenuAPI } from "../utils/constants";
+import { ImageBasicUrl, MenuAPI } from "../utils/constants";
 import Body from "./Body";
+import RestaurantInfoCard from "./RestaurantInfoCard.Jsx";
+import RestaurantCategory from "./RestaurantCategory";
+import MenuShimmer from "./MenuShimmer";
 
 const MenuRestaurant=()=>{
     
@@ -22,26 +26,45 @@ const MenuRestaurant=()=>{
         }
 
         if (menu == null) {
-            return <div>Shimmer</div>
+            return <div>
+                <MenuShimmer/>
+            </div>
         }
 
-        const menuInfo = menu?.data?.cards?.[2]?.card?.card?.info;
-        if (!menuInfo) {
-            return <div>Menu data unavailable</div>
-        }
+        const categories=menu?.data?.cards[5]?.groupedCard.cardGroupMap?.REGULAR?.cards.filter(
+            (category)=>{
+                if(
+                    category?.card?.card?.["@type"]===
+                    "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+                ){
+                    return true;
+                }else{
+                    return false;
+                }
+            },
+    
+        );
 
-        const {
-            name,
-            avgRatingString,
-            totalRatingsString,
-            cuisines,
-            cloudinaryImageId,
-        } = menuInfo;
+        console.log(categories)
+        
 
+       
         return (
+           
+            <div className="menuRestaurantDiv">    
             <div>
-                <h1>{name}</h1>
-                <div>{avgRatingString}</div>
+                <RestaurantInfoCard menu={menu}/>
+            </div>
+
+            {
+                categories.map((category)=>{
+                    console.log(category)
+                    return(
+                        <RestaurantCategory key={category.card.card.categoryId} categoryInfo={category.card.card} />
+                    )
+
+                })
+            }
             </div>
         )
   

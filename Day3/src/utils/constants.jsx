@@ -16,3 +16,5 @@ export const notifyIcon="https://th.bing.com/th/id/OIP.2vE1yVfGk4-nKYyrkYndkQHaH
  export const DessertsPNG="https://tse3.mm.bing.net/th/id/OIP.gVoTAJxuIh8A9Z8BpEltpQHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
  export const MandiPNG="https://seemattyrestaurant.com/wp-content/uploads/2024/03/royal_mandi_cuisine.png"
  export const MenuAPI="https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.374638644228302&lng=78.4300148114562&restaurantId="
+export const DownIcon="https://toppng.com/uploads/preview/arrow-down-icon-11549436707mosicxsqad.png"
+export const RatingStarIcon="https://img.freepik.com/premium-vector/star-rating-icon_352279-583.jpg?w=996"
