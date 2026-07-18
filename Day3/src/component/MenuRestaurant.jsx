@@ -6,24 +6,14 @@ import Body from "./Body";
 import RestaurantInfoCard from "./RestaurantInfoCard.Jsx";
 import RestaurantCategory from "./RestaurantCategory";
 import MenuShimmer from "./MenuShimmer";
+import useMenuRestaurant from "../utils/useMenuRestaurant";
 
 const MenuRestaurant=()=>{
     
         const {resId}=useParams();
             
-
-        const[menu,setMenu]=useState(null);
-
-        useEffect(()=>{
-            getRestaurantMenu();
-        },[])
-
-        const getRestaurantMenu = async () => {
-          const rawData = await fetch(MenuAPI + resId);
-          const json = await rawData.json();
-          console.log(json)
-          setMenu(json)
-        }
+        const menu=useMenuRestaurant(resId)
+        
 
         if (menu == null) {
             return <div>
